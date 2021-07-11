@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+	<style>
+		@keyframes slidy {
+			0% {
+				left: 0%;
+			}
+
+			20% {
+				left: 0%;
+			}
+
+			25% {
+				left: -100%;
+			}
+
+			45% {
+				left: -100%;
+			}
+
+			50% {
+				left: -200%;
+			}
+
+			70% {
+				left: -200%;
+			}
+
+			75% {
+				left: -300%;
+			}
+
+			95% {
+				left: -300%;
+			}
+
+			100% {
+				left: -400%;
+			}
+		}
+
+		body {
+			margin: 0;
+		}
+
+		div#slider {
+			overflow: hidden;
+		}
+
+		div#slider figure img {
+			width: 20%;
+			float: left;
+		}
+
+		div#slider figure {
+			position: relative;
+			width: 500%;
+			margin: 0;
+			left: 0;
+			text-align: left;
+			font-size: 0;
+			animation: 20s slidy infinite;
+		}
+
+		.element {
+			width: 100%;
+			height: 100%;
+			animation: pulse 10s infinite;
+		}
+
+		@keyframes pulse {
+			0% {
+				background-color: blue;
+			}
+
+			100% {
+				background-color: black;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="element">
+		<h1 id="home" style="color: pink">
+			<center>UNIVERSITY INTRANET</center>
+		</h1>
+
+		<center style="background-color: black"><a href="homepage.html" style="color: pink">HOME</a> | <a
+				href="course.html" style="color: pink">COURSE/DEPARTMENT</a> | <a href="enrollment.html"
+				style="color: pink">ENROLLMENT</a> | <a href="download.html" style="color: pink">DOWNLOAD FILES</a> | <a
+				href="faq.html" style="color: pink">FAQ</a> | <a href="email.html" style="color: pink">CONTACT
+				US/EMAIL</a></center>
+		<br>
+		<br>
+		<table width="100%">
+			<tr>
+				<td colspan="4">
+					<base href="img">
+					<div id="slider">
+						<figure>
+							<img src="Rangsit-University-20.jpg" alt>
+							<img src="Rangsit-University-30.jpg" alt>
+							<img src="Rangsit-University-40.jpg" alt>
+							<img src="Rangsit-University-50.jpg" alt>
+							<img src="Rangsit-University-60.jpg" alt>
+						</figure>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3 style="color: pink ">Location</h3>
+				</td>
+				<td>
+					<h3 style="color: pink ">News</h3>
+				</td>
+				<td>
+					<h3 style="color: pink ">Campus Tour</h3>
+				</td>
+				<td>
+					<h3 style="color: pink ">Academic Calendar</h3>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247916.74684712113!2d100.49818426965378!3d13.85708770067374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28185f3d8c255%3A0xd27de9963d091eba!2sRangsit%20University!5e0!3m2!1sen!2sth!4v1603959712457!5m2!1sen!2sth"
+						title="Location Map" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+						aria-hidden="false" tabindex="0"></iframe>
+				</td>
+				<td>
+					<iframe src="https://www.rsuip.org/whats-on/open-house-17-18/" title="News" height="300"
+						frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</td>
+				<td>
+					<iframe src="https://www.youtube.com/embed/HiRgz1FUab8" title="Campus" height="300" frameborder="0"
+						style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</td>
+				<td>
+					<iframe src="https://www.rsuip.org/academic-calendar/" title="Calendar" height="300" frameborder="0"
+						style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table class="element">
+			<tr>
+				<td colspan="4">
+					<center>
+						<h2 style="color: pink">INFORMATION AND GUIDANCE FOR COVID-19</h2>
+					</center>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+</html>
